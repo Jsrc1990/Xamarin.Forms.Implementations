@@ -27,14 +27,14 @@ jobs:
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
        PROJECT_FILE_PATH: Xamarin.Forms.Implementations/Xamarin.Forms.Implementations.csproj
-       NUGET_KEY: ${{secrets.TRANSVERSALNUGETSECRET}}
+       NUGET_KEY: ${{secrets.Xamarin.Forms.Implementations.Key}}
     - name: Publish
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
        PROJECT_FILE_PATH: Xamarin.Forms.Implementations.Android/Xamarin.Forms.Implementations.Android.csproj
-       NUGET_KEY: ${{secrets.TRANSVERSALNUGETSECRET}}
+       NUGET_KEY: ${{secrets.Xamarin.Forms.Implementations.Key}}
     - name: Publish
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
        PROJECT_FILE_PATH: Xamarin.Forms.Implementations.iOS/Xamarin.Forms.Implementations.iOS.csproj
-       NUGET_KEY: ${{secrets.TRANSVERSALNUGETSECRET}}
+       NUGET_KEY: ${{secrets.Xamarin.Forms.Implementations.Key}}
